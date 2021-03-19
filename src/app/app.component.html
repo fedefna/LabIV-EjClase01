@@ -1,0 +1,25 @@
+<h1>Calcular</h1>
+
+<br>
+<label >Edad uno</label>
+<input type="number" [(ngModel)]="edadUno" placeholder="ingresar una edad">
+
+<label for="edadDos">Edad dos</label>
+<input type="number" [(ngModel)]="edadDos" placeholder="ingresar una edad">
+<br><br>
+<label >Promedio: {{this.promedio}}</label>
+<br>
+<label >Suma: {{this.suma}}</label>
+
+<br>
+<br>
+
+
+<button (click)=calcular()>Calcular</button>
+
+<button (click)=limpiar()>Limpiar</button>
+
+
+
+
+<router-outlet></router-outlet>
